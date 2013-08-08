@@ -24,7 +24,7 @@ Requirements
 Installation & Documentation
 ----------------------------
 
-Unfortunately there does not exist a adopted documentation yet. For now please
+Unfortunately an adopted documentation does not exit yet. For now please
 refer to the TwitterBundle (virtualidentityag/hydra-twitter) [documentation][1].
 
 Contributing
