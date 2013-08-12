@@ -234,7 +234,7 @@ class InstagramService
             $this->qb->setMaxResults($limit);
         }
         if ($onlyApproved) {
-            $this->qb->andWhere('approved = true');
+            $this->qb->andWhere('e.approved = true');
         }
         return $this->qb->getQuery()->getResult();
     }
