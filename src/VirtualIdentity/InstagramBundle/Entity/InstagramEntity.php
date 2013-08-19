@@ -73,6 +73,14 @@ class InstagramEntity implements InstagramEntityInterface
      */
     protected $userUsername;
 
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="profilePicture", type="text", length=255, nullable=true)
+     */
+    protected $profilePicture;
+
     /**
      * @var string
      *
@@ -247,6 +255,30 @@ class InstagramEntity implements InstagramEntityInterface
 
         return $this;
     }
+
+    /**
+     * Gets the value of profilePicture.
+     *
+     * @return string
+     */
+    public function getProfilePicture()
+    {
+        return $this->profilePicture;
+    }
+
+    /**
+     * Sets the value of profilePicture.
+     *
+     * @param string $profilePicture the profilePicture
+     *
+     * @return self
+     */
+    public function setProfilePicture($profilePicture)
+    {
+        $this->profilePicture = $profilePicture;
+
+        return $this;
+    }    
 
     /**
      * Gets the value of imagesStandardResolutionUrl.
