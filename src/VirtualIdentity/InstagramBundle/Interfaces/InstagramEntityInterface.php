@@ -19,8 +19,8 @@ interface InstagramEntityInterface
     public function getUserId();
     public function setUserUsername($userName);
     public function getUserUsername();
-    public function getProfilePicture();
-    public function setProfilePicture($profilePicture); 
+    public function getUserProfilePicture();
+    public function setUserProfilePicture($userProfilePicture);
     public function setImagesStandardResolutionUrl($url);
     public function getImagesStandardResolutionUrl();
     public function setCreatedTime(\DateTime $createdTime);
