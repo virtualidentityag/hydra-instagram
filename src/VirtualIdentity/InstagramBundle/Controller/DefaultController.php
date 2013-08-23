@@ -131,7 +131,7 @@ class DefaultController extends Controller
             $service->setApiRequests($configurationEntity->getApiRequests());
             
             // Single % in YML not allowed => Replace with %%
-            array_walk($hydraConfig['virtual_identity_twitter']['api_requests'], function(&$r) { 
+            array_walk($hydraConfig['virtual_identity_instagram']['api_requests'], function(&$r) { 
                 $r = str_replace ("%", "%%", $r);
             });
 
