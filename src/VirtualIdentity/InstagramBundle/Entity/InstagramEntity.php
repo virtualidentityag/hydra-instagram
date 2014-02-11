@@ -96,6 +96,13 @@ class InstagramEntity implements InstagramEntityInterface
     protected $createdTime;
 
     /**
+     * @var string
+     *
+     * @ORM\Column(name="link", type="text", length=255)
+     */
+    protected $link;
+
+    /**
      * Get id
      *
      * @return integer
@@ -252,6 +259,31 @@ class InstagramEntity implements InstagramEntityInterface
     public function setUserUsername($userUsername)
     {
         $this->userUsername = $userUsername;
+
+        return $this;
+    }
+
+
+    /**
+     * Gets the value of link.
+     *
+     * @return string
+     */
+    public function getLink()
+    {
+        return $this->link;
+    }
+
+    /**
+     * Sets the value of link.
+     *
+     * @param string $link the link
+     *
+     * @return self
+     */
+    public function setLink($link)
+    {
+        $this->link = $link;
 
         return $this;
     }
