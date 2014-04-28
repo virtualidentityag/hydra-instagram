@@ -17,9 +17,9 @@
     ],
     "require": {
         "php": ">=5.3.3",
-        "symfony/symfony": "~2.3",
+        "symfony/symfony": "~2.4",
         "themattharris/tmhoauth": "0.8.*",
-        "knplabs/knp-paginator-bundle": "2.3.*"
+        "knplabs/knp-paginator-bundle": "~2.4"
     },
     "autoload": {
         "psr-0": { "VirtualIdentity\\InstagramBundle": "src/" }
